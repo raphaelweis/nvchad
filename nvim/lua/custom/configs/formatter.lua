@@ -1,5 +1,5 @@
 -- Utilities for creating configurations
-local util = require("formatter.util")
+-- local util = require("formatter.util")
 
 -- Provides the Format, FormatWrite, FormatLock, and FormatWriteLock commands
 require("formatter").setup({
@@ -16,6 +16,9 @@ require("formatter").setup({
 		},
         c = {
             require("formatter.filetypes.c").clangformat
+        },
+        go = {
+            require("formatter.filetypes.go").gofmt
         },
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype

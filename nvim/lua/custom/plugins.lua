@@ -45,6 +45,12 @@ local plugins = {
 					require("custom.configs.nvim-dap-ui")
 				end,
 			},
+			{
+				"leoluz/nvim-dap-go",
+				config = function()
+					require("custom.configs.nvim-dap-go")
+				end,
+			},
 		},
 	},
 	{

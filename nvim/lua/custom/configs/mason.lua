@@ -17,6 +17,7 @@ local opts = {
     "rust-analyzer",
     "sqls",
     "clang-format",
+    "gopls",
   },
 }
 

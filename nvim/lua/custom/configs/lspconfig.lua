@@ -22,6 +22,7 @@ local servers = {
   "sqlls",
   "tsserver",
   "vimls",
+  "gopls",
 }
 
 for _, lsp in ipairs(servers) do

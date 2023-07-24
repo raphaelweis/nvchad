@@ -18,7 +18,7 @@ M.abc = {
 
         ["<leader>bn"] = { "<CMD>bn<CR>", "Go to next opened buffer" },
         ["<leader>bp"] = { "<CMD>bp<CR>", "Go to previous opened buffer" },
-        ["<leader>bx"] = { "<CMD>bd<CR>", "Close current buffer" },
+        ["<leader>bd"] = { "<CMD>bd<CR>", "Close current buffer" },
 
 		["<leader>e"] = { "<CMD>NvimTreeToggle<CR>", "Toggle nvim tree" },
         ["<leader>fm"] = { "<CMD>FormatWrite<CR>", "Format and write the document" },
@@ -31,7 +31,11 @@ M.abc = {
 		["<leader>gb"] = { "<CMD>Telescope git_branches<CR>", "List all git branches, checkout selected branch" },
 		["<leader>gs"] = { "<CMD>Telescope git_status<CR>", "List current changes per file with diff preview" },
 
-        ["<leader>rn"] = { "<CMD>lua vim.lsp.buf.rename()<CR>", "Toggle Nvim-Dap UI" },
+        ["<leader>rn"] = { "<CMD>lua vim.lsp.buf.rename()<CR>", "Call LSP rename on cursor" },
+
+
+        ["<F8>"] = { "<CMD>lua require('dap').toggle_breakpoint()<CR>", "Toggle breakpoint on current line" },
+        ["<F9>"] = { "<CMD>lua require('dap').continue()<CR>", "Continue or start debugging" },
 
         ["<leader>d"] = { "<CMD>lua require('dapui').toggle()<CR>", "Toggle Nvim-Dap UI" },
 	},

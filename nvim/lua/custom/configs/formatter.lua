@@ -20,6 +20,18 @@ require("formatter").setup({
         go = {
             require("formatter.filetypes.go").gofmt
         },
+        html = {
+            require("formatter.filetypes.html").prettier
+        },
+        css = {
+            require("formatter.filetypes.css").prettier
+        },
+        javascript = {
+            require("formatter.filetypes.javascript").prettier
+        },
+        json = {
+            require("formatter.filetypes.json").prettier
+        },
 		-- Use the special "*" filetype for defining formatter configurations on
 		-- any filetype
 		["*"] = {

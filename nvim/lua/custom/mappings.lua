@@ -31,7 +31,9 @@ M.abc = {
 		["<leader>gb"] = { "<CMD>Telescope git_branches<CR>", "List all git branches, checkout selected branch" },
 		["<leader>gs"] = { "<CMD>Telescope git_status<CR>", "List current changes per file with diff preview" },
 
-        ["<leader>d"] = { "<CMD>lua require('dapui').toggle()<CR>", "Toggle Nvim-Dap UI" }
+        ["<leader>rn"] = { "<CMD>lua vim.lsp.buf.rename()<CR>", "Toggle Nvim-Dap UI" },
+
+        ["<leader>d"] = { "<CMD>lua require('dapui').toggle()<CR>", "Toggle Nvim-Dap UI" },
 	},
 
 	i = {

@@ -66,7 +66,9 @@ local plugins = {
 		dependencies = {
 			"stevearc/dressing.nvim", -- optional for vim.ui.select
 		},
-		config = true,
+		config = function()
+            require("custom.configs.flutter-tools")
+        end,
 	},
 }
 
